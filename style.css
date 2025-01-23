@@ -1,0 +1,227 @@
+
+@font-face {
+    font-family: "android";
+    src: url(fontes/idroid.otf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(fontes/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "rale";
+    src: url(fontes/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(fontes/BebasNeue-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0:  #A5CF96;
+    --cor1:  #6FA55C;
+    --cor2:  #447A30;
+    --cor3:  #225012;
+    --cor4:  #103303;
+    --font0: "android", serif;
+    --font1: "roboto", serif;
+    --font2: "rale", sans-serif;
+    --font3: "Bebas Neue", sans-serif;
+}
+
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+    background-color: var(--cor0);
+    margin: 0px;
+}
+
+header {
+    min-height: 193px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, var(--cor4), var(--cor1));
+    box-shadow: 0px 0.5px 9px rgba(0, 0, 0, 0.651);
+    padding-top: 26px;
+}
+
+header > h1 {
+    text-align: center;
+    font: normal lighter 3em "Bebas Neue", serif;
+    text-shadow: 2px 1px 7px black;
+    margin-bottom: 24px;
+}
+
+header > p {
+    font-family: "rale", sans-serif;
+    text-align: center;
+    text-shadow: 2px 1px 7px black;
+    max-width: 450px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+nav {
+    text-align: left;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+nav > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 7px;
+    border-radius: 8px;
+    transition: ease-in-out 0.2s;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    transition: ease-in-out 0.2s;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.616);
+    max-width: 900px;
+    min-width: 320px;
+    padding: 10px;
+    padding-top: 21px;
+    margin-bottom: 30px;
+}
+
+main > p {
+    font: normal 1.2em Arial, Helvetica, sans-serif;
+    text-indent: 35px;
+    text-align: justify;
+    margin: 20px;
+    color: black;
+}
+
+picture img {
+   width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+}
+
+article > .titulosh {
+    margin: 0px 20px;
+    text-align: left;
+}
+
+article > h2 {
+    background-image: linear-gradient(to right,  #70a55c4f 50%, white);
+    margin: 0px 20px;
+    text-align: left;
+    font: bold 1.5em "android", serif;
+    color: var(--cor4);
+}
+
+article > h1 {
+    font: bold 2em "android", serif;
+    color: var(--cor4);
+}
+
+article > p {
+    font: normal 1.2em Arial, Helvetica, sans-serif;
+    text-indent: 35px;
+    text-align: justify;
+    margin: 20px;
+    color: black;
+}
+
+p > a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: 550;
+}
+
+div {
+    background-color: var(--cor4);
+    margin: 0px -10px 30px -10px;
+    position: relative;
+    padding-bottom: 55%;
+}
+
+div > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #d1f5c4;
+    font: normal 1.2em Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 20px;
+    color: black;
+    border-radius: 10px 10px 15px 15px;
+    line-height: 1.2em;
+    padding-bottom: 25px;
+}
+
+aside > h3 {
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 600;
+}
+
+#h3aside {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    text-indent: 15px;
+}
+
+aside > p {
+    margin: 10px 20px;
+    text-indent: 30px;
+}
+
+aside > ul {
+    column-count: 2;
+    column-gap: 20px;
+    list-style-image: url(imagens/image-removebg-preview.png);
+    list-style-position: inside;
+    margin-left: 25px;
+}
+
+li > abbr {
+    text-decoration: none;
+}
+
+li:nth-child(8) {
+    break-before: column;
+}
+
+footer {
+    background-color: var(--cor4);
+    text-align: center;
+    height: 25px;
+    font: normal 1em Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de source</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        img {
+            width: 100%;
+        }
+
+        main {
+            max-width: 800px;
+            min-width: 320px;
+            padding: 20px;
+            background-color: rgba(210, 105, 30, 0.432);
+            margin: auto;
+        }
+
+        body {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <picture>
+            <source media="(max-width: 500px)" srcset="imagens/dan-droids-pq.png" type="image/png">
+            <img src="imagens/dan-droids.png" alt="imagem do android">
+        </picture>
+    </main>
+</body>
+</html>
